@@ -24,7 +24,8 @@ const bootstrapConfig = isProd ? bootstrapEntryPoints.prod : bootstrapEntryPoint
 module.exports = {
   entry: {
     app: "./src/index.js",
-    bootstrap: bootstrapConfig
+    bootstrap: bootstrapConfig,
+    fontawesome: 'font-awesome/scss/font-awesome.scss'
   },
   output: {
     path: BUILD_DIR,
@@ -33,8 +34,7 @@ module.exports = {
   },
   // devtool: "sourcemap",
   module: {
-    rules: [
-      {
+    rules: [{
         test: /\.scss$/,
         use: cssConfig
       },
@@ -48,22 +48,30 @@ module.exports = {
         // use: 'file-loader?name=[name].[ext]&outputPath=img/',
       },
       {
-        test: /\.(woff2?|svg)$/, loader: 'url-loader?limit=10000&name=fonts/[name].[ext]'
+        test: /\.(woff2?|svg)$/,
+        loader: 'url-loader?limit=10000&name=fonts/[name].[ext]'
       },
       {
-        test: /\.(ttf|eot)$/, loader: 'file-loader?name=fonts/[name].[ext]'
+        test: /\.(ttf|eot)$/,
+        loader: 'file-loader?name=fonts/[name].[ext]'
       },
       // {
       //   test: /\.js$/,
       //   use: ["source-map-loader"],
       //   enforce: "pre"
       // },
-      { test: /bootstrap[\/\\]dist[\/\\]js[\/\\]umd[\/\\]/, loader: 'imports-loader?jQuery=jquery' },
+      {
+        test: /bootstrap[\/\\]dist[\/\\]js[\/\\]umd[\/\\]/,
+        loader: 'imports-loader?jQuery=jquery'
+      },
       {
         test: /font-awesome\.config\.js/,
-        use: [
-          { loader: 'style-loader' },
-          { loader: 'font-awesome-loader' }
+        use: [{
+            loader: 'style-loader'
+          },
+          {
+            loader: 'font-awesome-loader'
+          }
         ]
       },
     ]
@@ -76,12 +84,10 @@ module.exports = {
     stats: 'errors-only'
   },
   plugins: [
-    new CopyWebpackPlugin([
-      {
-        from: "./src/index.html",
-        to: "index.html"
-      }
-    ]),
+    new CopyWebpackPlugin([{
+      from: "./src/index.html",
+      to: "index.html"
+    }]),
     new HtmlWebpackPlugin({
       minify: {
         collapseWhitespace: true

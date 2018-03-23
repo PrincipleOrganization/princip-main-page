@@ -57,5 +57,48 @@ header {
         padding: 10px 25px;
         font-size: 1rem;
         background-color: rgb(99, 89, 114);
+        &:after {
+            content: '';
+            position: absolute;
+            z-index: -1; //@include transition(all 0.3s);
+        }
+        &:before {
+            font-family: 'FontAwesome';
+            speak: none;
+            font-style: normal;
+            font-weight: normal;
+            font-variant: normal;
+            text-transform: none;
+            line-height: 1;
+            position: relative;
+            -webkit-font-smoothing: antialiased;
+            position: absolute;
+            height: 100%;
+            font-size: 125%;
+            line-height: 3.5;
+            color: #fff; //@include transition(all 0.3s);
+        }
+        &:active {
+            border-color: red;
+            color: red;
+            &:before {
+                color: #17954c;
+            }
+        }
+        &:hover {
+            background: red;
+            color: #fff;
+        }
+    }
+    .arrow-left {
+        &:before {
+            left: 70%;
+            opacity: 0;
+            top: 0;
+        }
+        &:hover:before {
+            left: 80%;
+            opacity: 1;
+        }
     }
 }

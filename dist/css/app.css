@@ -1,7 +1,208 @@
-body {
-  background: url(img/cac118.png) center center no-repeat;
+#mainNav {
+  background-color: transparent;
+  padding: 0;
 }
 
-body p {
-  color: green;
+#mainNav .navbar-brand #navbrand-title {
+  margin-left: .9rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: white;
+}
+
+#mainNav .navbar-toggler {
+  color: #fff;
+  border: none;
+  padding: .85rem 1.2rem;
+  vertical-align: middle;
+}
+
+#mainNav .navbar-toggler #nav-icon {
+  height: 15px;
+  width: 25px;
+  position: relative;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+#mainNav .navbar-toggler #nav-icon span {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: white;
+  border-radius: 0;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+#mainNav .navbar-toggler #nav-icon span:nth-child(1) {
+  top: 0px;
+}
+
+#mainNav .navbar-toggler #nav-icon span:nth-child(2) {
+  top: 7px;
+}
+
+#mainNav .navbar-toggler #nav-icon span:nth-child(3) {
+  top: 14px;
+}
+
+#mainNav .nav-link {
+  display: block;
+  font-size: .75rem;
+  padding: 2rem 1rem;
+  letter-spacing: .08rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+#mainNav .nav-link:before {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: #0883a4;
+  transform: scaleX(0);
+}
+
+#mainNav .nav-link:hover:before {
+  transform: scaleX(1);
+}
+
+header {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  padding-top: 120px;
+  background: url(img/6287d4.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+header .header-intro-text {
+  width: 700px;
+  height: 500px;
+  text-align: center;
+  margin: 2rem 5rem;
+}
+
+header .header-intro-text .intro-lead-in {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: white;
+  line-height: 1.2;
+  letter-spacing: .09rem;
+}
+
+header .header-intro-text .intro-heading {
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+header .header-intro-text .sub-intro-heading {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  color: #dcdcdc;
+}
+
+header .mockup-part {
+  display: flex !important;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+header .mockup-part img {
+  margin: 5rem 12rem 0 0;
+  width: 80%;
+}
+
+.btn-cont {
+  opacity: .8;
+  margin-top: 5rem;
+}
+
+.btn-cont .btn-more {
+  border-radius: 30px;
+  color: #fff !important;
+  padding: 10px 25px;
+  font-size: 1rem;
+  background-color: #635972;
+}
+
+.btn-cont .btn-more:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+}
+
+.btn-cont .btn-more:before {
+  font-family: 'FontAwesome';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  position: absolute;
+  height: 100%;
+  font-size: 125%;
+  line-height: 3.5;
+  color: #fff;
+}
+
+.btn-cont .btn-more:active {
+  border-color: red;
+  color: red;
+}
+
+.btn-cont .btn-more:active:before {
+  color: #17954c;
+}
+
+.btn-cont .btn-more:hover {
+  background: red;
+  color: #fff;
+}
+
+.btn-cont .arrow-left:before {
+  left: 70%;
+  opacity: 0;
+  top: 0;
+}
+
+.btn-cont .arrow-left:hover:before {
+  left: 80%;
+  opacity: 1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Raleway' !important;
 }

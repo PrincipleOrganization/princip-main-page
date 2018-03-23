@@ -1,17 +1,16 @@
 // Styling for navigation section
-
-#mainNav{
+#mainNav {
     background-color: transparent;
     padding: 0;
-    .navbar-brand{
-        #navbrand-title{
+    .navbar-brand {
+        #navbrand-title {
             margin-left: .9rem;
             font-size: 1.4rem;
             font-weight: 400;
             color: white;
         }
     }
-    .navbar-toggler{
+    .navbar-toggler {
         color: #fff;
         border: none;
         padding: .85rem 1.2rem;
@@ -48,42 +47,53 @@
                 transition: .25s ease-in-out;
                 &:nth-child(1) {
                     top: 0px;
-                  }
-                  &:nth-child(2) {
+                }
+                &:nth-child(2) {
                     top: 7px;
-                  }
-                  &:nth-child(3) {
+                }
+                &:nth-child(3) {
                     top: 14px;
-                  }
-              }
-              &.open{
+                }
+            }
+            &.open {
                 span:nth-child(1) {
                     top: 7px;
                     -webkit-transform: rotate(135deg);
                     -moz-transform: rotate(135deg);
                     -o-transform: rotate(135deg);
                     transform: rotate(135deg);
-                  }
-                  span:nth-child(2) {
+                }
+                span:nth-child(2) {
                     opacity: 0;
                     left: -60px;
-                  }
-                  span:nth-child(3) {
+                }
+                span:nth-child(3) {
                     top: 7px;
                     -webkit-transform: rotate(-135deg);
                     -moz-transform: rotate(-135deg);
                     -o-transform: rotate(-135deg);
                     transform: rotate(-135deg);
-                  }
+                }
             }
         }
     }
-    .nav-link{
+    .nav-link {
         display: block;
         font-size: .75rem;
         padding: 2rem 1rem;
         letter-spacing: .08rem;
         color: #fff;
         text-transform: uppercase;
+        &:before {
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 2px;
+            background: $hover;
+            transform: scaleX(0);
+        }
+        &:hover:before {
+            transform: scaleX(1);
+        }
     }
 }
