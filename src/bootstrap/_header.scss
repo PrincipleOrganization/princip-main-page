@@ -1,8 +1,6 @@
 // Styling for header section
-
-header{
-    position: relative;
-    display: table;
+header {
+    position: relative; // display: table;
     width: 100%;
     height: 100%;
     color: #fff;
@@ -12,39 +10,52 @@ header{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    .header-intro-text{
+    .header-intro-text {
         width: 700px;
         height: 500px;
         text-align: center;
         margin: 2rem 5rem;
-            .intro-lead-in{
-                    font-size: 1.8rem;
-                    font-weight: 400;
-                    color: white;
-                    line-height: 1.2;
-                    letter-spacing: .09rem; 
-            }
-            .intro-heading{
-                margin-top: 2rem;
-                font-size: 1.4rem;
-                font-weight: 300;
-            }
-            .sub-intro-heading{
-                margin-top: 2rem;
-                font-size: 1.2rem;
-                color: #dcdcdc;
-            }
+        .intro-lead-in {
+            font-size: 1.8rem;
+            font-weight: 400;
+            color: white;
+            line-height: 1.2;
+            letter-spacing: .09rem;
+        }
+        .intro-heading {
+            margin-top: 2rem;
+            font-size: 1.4rem;
+            font-weight: 300;
+        }
+        .sub-intro-heading {
+            margin-top: 2rem;
+            font-size: 1.2rem;
+            color: #dcdcdc;
         }
     }
+    .mockup-part {
+        display: flex !important;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        img {
+            // position: absolute;
+            // top: 5rem;
+            // left: 3.125rem;
+            margin: 5rem 12rem 0 0;
+            width: 80%;
+        }
+    }
+}
 
-.btn-cont{
+.btn-cont {
     opacity: .8;
     margin-top: 5rem;
-    .btn-more{
+    .btn-more {
         border-radius: 30px;
         color: #fff !important;
-        padding: 10px 25px;    
+        padding: 10px 25px;
         font-size: 1rem;
-        background-color: rgb(99, 89, 114);   
+        background-color: rgb(99, 89, 114);
     }
 }
