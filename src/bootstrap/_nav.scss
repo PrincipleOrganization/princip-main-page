@@ -7,11 +7,11 @@
             margin-left: .9rem;
             font-size: 1.4rem;
             font-weight: 400;
-            color: white;
+            color: $color-text;
         }
     }
     .navbar-toggler {
-        color: #fff;
+        color: $color-text;
         border: none;
         padding: .85rem 1.2rem;
         vertical-align: middle;
@@ -33,7 +33,7 @@
                 position: absolute;
                 height: 2px;
                 width: 100%;
-                background: white;
+                background: $color-text;
                 border-radius: 0;
                 opacity: 1;
                 left: 0;
@@ -82,18 +82,10 @@
         font-size: .75rem;
         padding: 2rem 1rem;
         letter-spacing: .08rem;
-        color: #fff;
+        color: $color-text;
         text-transform: uppercase;
-        &:before {
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            height: 2px;
-            background: $hover;
-            transform: scaleX(0);
-        }
-        &:hover:before {
-            transform: scaleX(1);
+        &:hover {
+            color: $color-hover;
         }
     }
 }

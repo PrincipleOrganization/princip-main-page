@@ -1,0 +1,44 @@
+// Global styling for this template
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Raleway' !important;
+    -webkit-tap-highlight-color: $color-primary;
+    user-select: none;
+}
+
+section {
+    padding: 6.25rem 0;
+    .section-heading {
+        font-size: 1.3rem;
+        margin-top: 0;
+        margin-bottom: 0.9rem;
+        text-transform: uppercase;
+    }
+    .section-subheading {
+        font-size: 1.06rem;
+        margin-bottom: 4.6rem;
+    }
+}
+
+// Highlight color customization
+::-moz-selection {
+    background: $color-primary;
+    text-shadow: none;
+}
+
+::selection {
+    background: $color-primary;
+    text-shadow: none;
+}
+
+img::-moz-selection {
+    background: 0 0;
+}
+
+img::selection {
+    background: none;
+}

@@ -2,13 +2,6 @@
 @import './bootstrap/_variables.scss';
 @import './bootstrap/_nav.scss';
 @import './bootstrap/_header.scss';
-
-*{
-    margin:0;
-    padding:0;
-}
-
-body{
-    font-family: 'Raleway' !important;
-}
-
+@import './bootstrap/_global.scss';
+@import './bootstrap/_services.scss';
+@import './bootstrap/_overrided.scss';

@@ -1,0 +1,52 @@
+// Styling for the services section
+section {
+    .section-heading {
+        color: $color-primary;
+    } // .service-item::before {
+    //     //content: url('img/consulting-icon.png');
+    //     content: "";
+    //     display: block;
+    //     background: url('img/consulting-icon.png') no-repeat;
+    //     width: 20px;
+    //     height: 20px;
+    //     float: left;
+    //     margin: 0 6px 0 0;
+    // }
+    img {
+        width: 40px;
+        height: 55px;
+        float: left;
+    }
+    .service-text {
+        margin-left: 50px;
+        margin-top: 80px;
+        .service-heading {
+            font-size: .9rem;
+            color: $color-primary;
+            text-transform: uppercase;
+            letter-spacing: .02rem;
+        }
+        p {
+            font-size: .9rem;
+            margin-right: 60px;
+        }
+    }
+    .service-item2 {
+        img {
+            width: 58px;
+            height: 58px;
+        }
+    }
+    .service-item3 {
+        img {
+            width: 50px;
+            height: 50px;
+        }
+    }
+    .service-item4 {
+        img {
+            width: 65px;
+            height: 50px;
+        }
+    }
+}
