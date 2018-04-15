@@ -88,6 +88,7 @@ module.exports = {
       from: "./src/index.html",
       to: "index.html"
     }]),
+
     new HtmlWebpackPlugin({
       minify: {
         collapseWhitespace: true
@@ -95,18 +96,28 @@ module.exports = {
       hash: true,
       template: "./src/index.html"
     }),
+
     new ExtractTextPlugin({
       filename: '/css/[name].css',
       disable: !isProd,
       allChunks: true
     }),
+
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery'
+    }),
+
     // Make sure this is after ExtractTextPlugin!
     new PurifyCSSPlugin({
       // Give paths to parse for rules. These should be absolute!
       paths: glob.sync(path.join(__dirname, 'src/*.html')),
     }),
+
     new webpack.HotModuleReplacementPlugin(),
+
     new webpack.NamedModulesPlugin(),
+
     new webpack.ProvidePlugin({
       $: 'jquery',
       jQuery: 'jquery',
@@ -127,6 +138,6 @@ module.exports = {
       Tab: 'exports-loader?Tab!bootstrap/js/dist/tab',
       Tooltip: "exports-loader?Tooltip!bootstrap/js/dist/tooltip",
       Util: 'exports-loader?Util!bootstrap/js/dist/util'
-    }),
+    })
   ]
-};
+}

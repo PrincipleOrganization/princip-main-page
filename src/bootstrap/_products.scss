@@ -1,0 +1,35 @@
+// Styling for counters section
+#products {
+    letter-spacing: .02rem;
+    .product-item {
+        margin-bottom: 80px;
+        img {
+            height: 15.6rem;
+            width: 40%;
+            margin-right: 2rem;
+            &.float-left {
+                float: left;
+            }
+            &.float-right {
+                float: right;
+                margin-left: 3rem;
+            }
+        }
+        .product-text {
+            line-height: 1.2;
+            &.right {
+                margin: 1.875rem 10rem 0 0;
+            }
+            &.left {
+                margin: 1.875rem 0 0 7rem;
+            }
+            .product-heading,
+            p {
+                font-size: .9rem !important;
+            }
+            .product-heading {
+                text-transform: uppercase;
+            }
+        }
+    }
+}

@@ -1,4 +1,9 @@
 // Global styling for this template
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-Regular.ttf') format('ttf');
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,8 +11,8 @@
 
 body {
     font-family: 'Raleway' !important;
-    -webkit-tap-highlight-color: $color-primary;
-    user-select: none;
+    -webkit-tap-highlight-color: $color-primary; //user-select: none;
+    overflow-x: hidden;
 }
 
 section {
@@ -17,6 +22,7 @@ section {
         margin-top: 0;
         margin-bottom: 0.9rem;
         text-transform: uppercase;
+        color: $color-primary;
     }
     .section-subheading {
         font-size: 1.06rem;
@@ -27,11 +33,13 @@ section {
 // Highlight color customization
 ::-moz-selection {
     background: $color-primary;
+    color: white;
     text-shadow: none;
 }
 
 ::selection {
     background: $color-primary;
+    color: white;
     text-shadow: none;
 }
 

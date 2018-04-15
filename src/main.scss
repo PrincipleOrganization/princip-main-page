@@ -1,7 +1,9 @@
 @import './bootstrap/customizations.scss';
 @import './bootstrap/_variables.scss';
+@import './bootstrap/_overrided.scss';
+@import './bootstrap/_global.scss';
 @import './bootstrap/_nav.scss';
 @import './bootstrap/_header.scss';
-@import './bootstrap/_global.scss';
 @import './bootstrap/_services.scss';
-@import './bootstrap/_overrided.scss';
+@import './bootstrap/_counters.scss';
+@import './bootstrap/_products.scss';
