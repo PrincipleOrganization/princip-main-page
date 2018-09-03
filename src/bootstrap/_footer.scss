@@ -1,0 +1,106 @@
+// Styling for the footer
+footer {
+    padding: 6.25rem 0 0 0;
+    background: url('img/counters-bg.png') no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: $color-text;
+    width: 100%;
+
+    h2 {
+        font-size: 1.3rem;
+        margin-top: 0;
+        margin-bottom: 0.9rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding-bottom: 2rem;
+    }
+
+    .footer-subheading {
+        font-size: 1.1rem;
+        font-weight: 400;
+    }
+
+    .footer-description {
+        font-size: 0.825rem;
+        font-weight: 100;
+    }
+
+    .footer-navbar .nav-link {
+        display: block;
+        font-size: .5rem;
+        padding: .5rem .5rem;
+        letter-spacing: 1.2px;
+        color: $color-text;
+        text-transform: uppercase;
+        opacity: .5;
+    }
+
+    .list-unstyled {
+        font-size: 0.825rem;
+        margin-top: 1.5rem;
+
+        li {
+            .fa {
+                font-size: 1rem;
+                margin: 0 20px;
+                opacity: .5;
+
+                &.fa-mobile {
+                    margin-top: .9rem;
+                    font-size: 1.5rem;
+                }
+
+                &.fa-map-marker {
+                    margin-top: .9rem;
+                    font-size: 1.3rem;
+                }
+            }
+
+            a {
+                text-decoration: none;
+                color: $color-text;
+
+                &:hover {
+                    color: $color-hover;
+                }
+            }
+        }
+    }
+
+    .footer-copyright-nav {
+        margin-top: 3rem;
+        background: rgba(black, 0.5);
+        font-size: .625rem;
+        color: $color-text;
+
+        li {
+            margin: 0 -10px;
+
+            a {
+                text-decoration: none;
+                color: $color-text;
+                opacity: .5;
+
+                &:hover {
+                    color: $color-text;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    .footer-copyright {
+        color: rgba($color-text, 0.5);
+
+        .brand-name {
+            color: $color-hover;
+
+            &:hover {
+                color: rgba($color-text, 0.5);
+            }
+        }
+    }
+}

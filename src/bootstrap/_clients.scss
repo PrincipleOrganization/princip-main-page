@@ -1,0 +1,34 @@
+#clients {
+    background-color: #ebebeb;
+    max-height: max-content;
+
+    .section-heading {
+        color: #4d4545;
+    }
+
+    // .carousel-indicators li {
+    //     margin-top: 50px;
+    // }
+    .centered {
+        height: auto;
+        align-items: center;
+        margin-top: 2rem;
+
+        img {
+            width: 6.5rem;
+        }
+
+        .client-item {
+            margin-right: 2rem;
+            transition: 1s ease;
+            width: 5rem;
+            margin-bottom: 1.5rem;
+            -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+            background-color: white;
+            mix-blend-mode: multiply;
+            transition: 400ms;
+            opacity: 0.9;
+        }
+    }
+}

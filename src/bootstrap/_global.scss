@@ -17,17 +17,24 @@ body {
 
 section {
     padding: 6.25rem 0;
+
     .section-heading {
         font-size: 1.3rem;
         margin-top: 0;
         margin-bottom: 0.9rem;
         text-transform: uppercase;
         color: $color-primary;
+        letter-spacing: 1px;
     }
+
     .section-subheading {
         font-size: 1.06rem;
         margin-bottom: 4.6rem;
     }
+}
+
+p {
+    letter-spacing: .3px;
 }
 
 // Highlight color customization
