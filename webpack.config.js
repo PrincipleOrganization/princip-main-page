@@ -103,10 +103,11 @@ module.exports = {
       allChunks: true
     }),
 
-    new webpack.ProvidePlugin({
-      $: 'jquery',
-      jQuery: 'jquery'
-    }),
+    // new webpack.ProvidePlugin({
+    //   $: 'jquery',
+    //   jQuery: 'jquery',
+    //   "window.jQuery": "jquery"
+    // }),
 
     // Make sure this is after ExtractTextPlugin!
     new PurifyCSSPlugin({

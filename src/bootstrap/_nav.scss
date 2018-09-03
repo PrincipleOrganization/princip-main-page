@@ -4,11 +4,17 @@
     padding: 0;
 
     .navbar-brand {
+        .brand-logo {
+            width: 4rem;
+        }
+
         #navbrand-title {
-            margin-left: .9rem;
+            //margin-left: .9rem;
             font-size: 1.4rem;
-            font-weight: 400;
+            font-weight: 100;
             color: $color-text;
+            letter-spacing: .05rem;
+            vertical-align: middle;
         }
     }
 

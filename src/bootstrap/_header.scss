@@ -10,11 +10,13 @@ header {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+
     .header-intro-text {
-        width: 700px;
-        height: 500px;
+        // width: 700px;
+        // height: 500px;
         text-align: center;
-        margin: 2rem 5rem;
+        margin: 1.5rem 2rem 6rem 8rem;
+
         .intro-lead-in {
             font-size: 1.8rem;
             font-weight: 400;
@@ -22,22 +24,26 @@ header {
             line-height: 1.2;
             letter-spacing: .09rem;
         }
+
         .intro-heading {
             margin-top: 2rem;
             font-size: 1.4rem;
             font-weight: 300;
         }
+
         .sub-intro-heading {
             margin-top: 2rem;
             font-size: 1.2rem;
             color: #dcdcdc;
         }
     }
+
     .mockup-part {
         display: flex !important;
         flex-flow: row wrap;
         justify-content: center;
         align-items: center;
+
         img {
             // position: absolute;
             // top: 5rem;
@@ -51,47 +57,56 @@ header {
 .btn-cont {
     opacity: .8;
     margin-top: 5rem;
+
     /* Icon Hang */
     @-webkit-keyframes hvr-icon-hang {
         0% {
             -webkit-transform: translateX()(6px);
             transform: translateX(6px);
         }
+
         50% {
             -webkit-transform: translateX(2px);
             transform: translateX(2px);
         }
+
         100% {
             -webkit-transform: translateX(6px);
             transform: translateX(6px);
         }
     }
+
     @keyframes hvr-icon-hang {
         0% {
             -webkit-transform: translateX(6px);
             transform: translateX(6px);
         }
+
         50% {
             -webkit-transform: translateX(2px);
             transform: translateX(2px);
         }
+
         100% {
             -webkit-transform: translateX(6px);
             transform: translateX(6px);
         }
     }
+
     @-webkit-keyframes hvr-icon-hang-sink {
         100% {
             -webkit-transform: translateX(6px);
             transform: translateX(6px);
         }
     }
+
     @keyframes hvr-icon-hang-sink {
         100% {
             -webkit-transform: translateX(6px);
             transform: translateX(6px);
         }
     }
+
     .hvr-icon-hang {
         display: inline-block;
         vertical-align: middle;
@@ -103,6 +118,7 @@ header {
         -webkit-transition-duration: 0.3s;
         transition-duration: 0.3s;
     }
+
     .hvr-icon-hang:before {
         content: "\f105";
         position: absolute;
@@ -113,6 +129,7 @@ header {
         -webkit-transform: translateZ(0);
         transform: translateZ(0);
     }
+
     .hvr-icon-hang:hover:before,
     .hvr-icon-hang:focus:before,
     .hvr-icon-hang:active:before {
@@ -131,11 +148,24 @@ header {
         -webkit-animation-direction: normal, alternate;
         animation-direction: normal, alternate;
     }
+
     .btn-more {
         border-radius: 30px;
         color: $color-text !important;
         padding: 10px 35px 10px 25px;
         font-size: 1rem;
         background-color: $color-btn;
+    }
+}
+
+@media (max-width: 991px) {
+    header {
+        .header-intro-text {
+            margin: 0 0 2rem 0 !important;
+        }
+
+        .mockup-part img {
+            margin: 2rem 0 !important;
+        }
     }
 }
