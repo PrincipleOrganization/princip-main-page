@@ -176,7 +176,7 @@ header {
   height: 100%;
   color: #F9F8EB;
   padding-top: 120px;
-  background: url(img/6287d4.png) no-repeat center center fixed;
+  background: url(/img/background.png) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
