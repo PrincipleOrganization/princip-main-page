@@ -32,6 +32,9 @@ module.exports = {
     filename: "[name].bundle.js",
     publicPath: ""
   },
+  node: {
+    __dirname: false
+  },
   // devtool: "sourcemap",
   module: {
     rules: [{
