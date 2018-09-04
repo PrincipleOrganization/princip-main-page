@@ -49,6 +49,11 @@
   font-size: 5em;
 }
 
+.fa-fw {
+  width: 1.28571em;
+  text-align: center;
+}
+
 .fa-ul {
   padding-left: 0;
   margin-left: 2.14286em;
@@ -104,28 +109,68 @@
   content: "\F015";
 }
 
+.fa-list-alt:before {
+  content: "\F022";
+}
+
 .fa-text-width:before {
   content: "\F035";
 }
 
-.fa-arrow-left:before {
-  content: "\F060";
+.fa-list:before {
+  content: "\F03A";
 }
 
-.fa-arrow-right:before {
-  content: "\F061";
+.fa-map-marker:before {
+  content: "\F041";
+}
+
+.fa-chevron-left:before {
+  content: "\F053";
+}
+
+.fa-chevron-right:before {
+  content: "\F054";
 }
 
 .fa-expand:before {
   content: "\F065";
 }
 
+.fa-chevron-up:before {
+  content: "\F077";
+}
+
+.fa-group:before {
+  content: "\F0C0";
+}
+
 .fa-link:before {
   content: "\F0C1";
 }
 
+.fa-copy:before {
+  content: "\F0C5";
+}
+
+.fa-list-ul:before {
+  content: "\F0CA";
+}
+
+.fa-envelope:before {
+  content: "\F0E0";
+}
+
+.fa-mobile:before {
+  content: "\F10B";
+}
+
 .fa-html5:before {
   content: "\F13B";
+}
+
+.fa-toggle-up:before {
+  content: "\F151";
 }
 
 .fa-toggle-right:before {
@@ -136,8 +181,24 @@
   content: "\F191";
 }
 
+.fa-support:before {
+  content: "\F1CD";
+}
+
 .fa-header:before {
   content: "\F1DC";
+}
+
+.fa-copyright:before {
+  content: "\F1F9";
+}
+
+.fa-500px:before {
+  content: "\F26E";
+}
+
+.fa-map:before {
+  content: "\F279";
 }
 
 .fa-edge:before {
@@ -146,4 +207,15 @@
 
 .fa-fa:before {
   content: "\F2B4";
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
