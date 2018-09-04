@@ -11,10 +11,10 @@ const SRC_DIR = path.resolve(__dirname, "src");
 const BUILD_DIR = path.resolve(__dirname, "dist");
 
 const isProd = process.env.NODE_ENV === 'production'; //true or false
-const cssDev = ['style-loader', 'css-loader', 'sass-loader', 'postcss-loader'];
+const cssDev = ['style-loader', 'css-loader?url=false', 'sass-loader', 'postcss-loader'];
 const cssProd = ExtractTextPlugin.extract({
   fallback: 'style-loader',
-  use: ['css-loader', 'sass-loader', 'postcss-loader'],
+  use: ['css-loader?url=false', 'sass-loader', 'postcss-loader'],
   publicPath: BUILD_DIR
 });
 
