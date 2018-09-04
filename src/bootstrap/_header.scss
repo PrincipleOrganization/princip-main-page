@@ -5,7 +5,7 @@ header {
     height: 100%;
     color: $color-text;
     padding-top: 120px;
-    background: url('img/Background.png') no-repeat center center fixed;
+    background-image: url('img/Background.png');
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
