@@ -139,7 +139,8 @@ img::selection {
   color: #DFD3D3;
 }
 
-.cl-effect-1 a::before,.cl-effect-1 a::after {
+.cl-effect-1 a::before,
+.cl-effect-1 a::after {
   display: inline-block;
   opacity: 0;
   -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
@@ -163,7 +164,10 @@ img::selection {
   transform: translateX(-20px);
 }
 
-.cl-effect-1 a:hover::before,.cl-effect-1 a:hover::after,.cl-effect-1 a:focus::before,.cl-effect-1 a:focus::after {
+.cl-effect-1 a:hover::before,
+.cl-effect-1 a:hover::after,
+.cl-effect-1 a:focus::before,
+.cl-effect-1 a:focus::after {
   opacity: 1;
   -webkit-transform: translateX(0px);
   -moz-transform: translateX(0px);
@@ -176,7 +180,7 @@ header {
   height: 100%;
   color: #F9F8EB;
   padding-top: 120px;
-  background: url(img/6287d4.png) no-repeat center center fixed;
+  background: url(/dist/img/6287d4.png) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -297,7 +301,9 @@ header .mockup-part img {
   transform: translateZ(0);
 }
 
-.btn-cont .hvr-icon-hang:hover:before,.btn-cont .hvr-icon-hang:focus:before,.btn-cont .hvr-icon-hang:active:before {
+.btn-cont .hvr-icon-hang:hover:before,
+.btn-cont .hvr-icon-hang:focus:before,
+.btn-cont .hvr-icon-hang:active:before {
   -webkit-animation-name: hvr-icon-hang-sink, hvr-icon-hang;
   animation-name: hvr-icon-hang-sink, hvr-icon-hang;
   -webkit-animation-duration: .3s, 1.5s;
@@ -363,7 +369,8 @@ header .mockup-part img {
   margin-right: 60px;
 }
 
-#services .services .third-item,#services .services .fourth-item {
+#services .services .third-item,
+#services .services .fourth-item {
   margin-top: 50px;
 }
 
@@ -431,7 +438,8 @@ header .mockup-part img {
   margin: 1.875rem 0 0 7rem;
 }
 
-#products .product-item .product-text .product-heading,#products .product-item .product-text p {
+#products .product-item .product-text .product-heading,
+#products .product-item .product-text p {
   font-size: .9rem !important;
 }
 
