@@ -7,7 +7,8 @@
     "dev": "webpack-dev-server --mode development --open",
     "prod": "npm run clean && NODE_ENV=production webpack --mode production ",
     "clean": "rimraf ./dist/*",
-    "lint": "eslint ./src --fix"
+    "lint": "eslint ./src --fix",
+    "heroku - postbuild": "webpack - p"
   },
   "keywords": [],
   "author": "",
