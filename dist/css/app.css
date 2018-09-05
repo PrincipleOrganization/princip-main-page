@@ -176,7 +176,7 @@ header {
   height: 100%;
   color: #F9F8EB;
   padding-top: 120px;
-  background-image: url(img/6287d4.png) no-repeat center center fixed;
+  background: url(img/e63f85.png) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -383,7 +383,7 @@ header .mockup-part img {
 }
 
 #counters {
-  background: url(img/9e2db2.png) no-repeat center center scroll;
+  background: url(img/2d0d8a.png) no-repeat center center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -473,7 +473,7 @@ header .mockup-part img {
 
 footer {
   padding: 6.25rem 0 0 0;
-  background: url(img/9e2db2.png) no-repeat center center scroll;
+  background: url(img/2d0d8a.png) no-repeat center center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
