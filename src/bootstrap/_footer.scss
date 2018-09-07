@@ -25,7 +25,12 @@ footer {
     .footer-subheading {
         font-size: 1.1rem;
         font-weight: 100;
-        vertical-align: middle;
+        color: $color-text;
+
+        &:hover {
+            color: $color-hover;
+            text-decoration: none;
+        }
     }
 
     .footer-description {
