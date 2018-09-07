@@ -42,7 +42,7 @@ module.exports = {
         test: /\.(gif|png|jpe?g|svg)$/i,
         use: [
           // 'file-loader?name=img/[hash:6].[ext]',
-          'file-loader?name=[hash:6].[ext]&outputPath=img/&publicPath=src/img/',
+          'file-loader?name=[hash:6].[ext]&outputPath=img/&publicPath=img/',
           'image-webpack-loader'
         ]
         // use: 'file-loader?name=[name].[ext]&outputPath=img/',
